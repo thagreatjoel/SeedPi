@@ -1,55 +1,73 @@
-# Seed Pi
+# Seed Pi 🌱
 
-Seed Pi is a custom single-board computer (SBC) designed for learning hardware design and embedded Linux. The board is built around the Rockchip RK3308B processor and is intended for IoT projects, experimentation, and understanding how a Linux-based computer works at the hardware level. ![image1](https://raw.githubusercontent.com/thagreatjoel/SeedPi/refs/heads/main/img/seedpi.jpg)
+Seed Pi is a small Linux single-board computer built around the RK3308B processor.
+This project was created as part of Stasis, a hardware event by Hack Club.
 
-# Overview
+Stasis: https://stasis.hackclub.com
 
-Seed Pi is a small Linux SBC created as a personal hardware project. The goal of this project is to design a complete computer from scratch, starting from the processor and building the entire system including memory, power regulation, wireless connectivity, and peripheral interfaces.
+The goal of Seed Pi is to learn how a real computer is built — from the processor and RAM all the way to a working Linux system.
 
-The board is designed to boot Linux from a microSD card and can be accessed through UART for debugging or through WiFi using SSH once the system is running.
+![image1](https://raw.githubusercontent.com/thagreatjoel/SeedPi/refs/heads/main/img/seedpi.jpg)
 
-# Features
 
-- Rockchip RK3308B processor
-- DDR3 RAM
-- Realtek RTL8723DS WiFi + Bluetooth
-- MicroSD card boot
-- USB connectivity
-- UART debug interface
-- 40-pin GPIO header for sensors and peripherals
-- Power-only USB-C input
-- Linux support
+---
 
-# Hardware
+## What is Seed Pi?
 
-Main components used in the design:
+Seed Pi is a custom SBC designed for:
+- learning hardware design
+- experimenting with embedded Linux
+- building IoT projects
+- understanding how computers work internally
+
+The board boots Linux from a microSD card and can be accessed using UART or SSH over WiFi.
+
+---
+
+## Main Features
 
 - RK3308B processor
-- Samsung K4B4G1646E DDR3 memory
-- RTL8723DS WiFi + Bluetooth module
+- DDR3 RAM
+- WiFi + Bluetooth (RTL8723DS)
+- microSD boot
+- USB support
+- UART debug interface
+- 40-pin GPIO header
+- USB-C power input
+
+
+---
+
+## Hardware
+
+Main components used:
+
+- RK3308B processor
+- Samsung K4B4G1646E DDR3 RAM
+- RTL8723DS WiFi + Bluetooth
 - CH340C USB-UART converter
-- AMS1117 voltage regulators
+- AMS1117 regulators
 - ETA5050 1.0V regulator
 - MicroSD card socket
 - USB connectors
-- GPIO expansion header
+- 40-pin GPIO header
 
+---
 
-# Software
+## Specs
 
-The board is designed to run Linux distributions such as:
+- CPU: Rockchip RK3308B (Quad-core Cortex-A35)
+- RAM: DDR3
+- Wireless: WiFi + Bluetooth (RTL8723DS)
+- Storage: microSD card
+- USB: USB Type-A
+- Debug: UART (CH340C)
+- GPIO: 40-pin header
+- Power: USB-C (power only)
+- OS: Linux (Armbian / Debian)
 
-- Armbian
-- Debian-based systems
-- Custom embedded Linux builds
+---
 
-# Project Goals
-
-- Learn SoC hardware design
-- Understand DDR routing and high-speed PCB layout
-- Build a custom Linux SBC
-- Create a flexible platform for IoT projects
-
-# Current Status 🟢
+## Current Status 🟢
 
 The schematic and PCB design are currently in progress. Component placement and routing are being developed in EasyEDA.
